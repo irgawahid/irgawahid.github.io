@@ -4,10 +4,12 @@
 body {
   font-family: sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.7;
   color: #333;
-  background-color: #fff;
+  background-color: #c7adad;
   margin: 0; /* Pastikan body tidak memiliki margin */
+  padding: 0;
+  height: 1000vh;
 }
 
 /* Header */
@@ -106,6 +108,98 @@ nav a:hover::before {
   transform: scaleX(1);
 }
 
+.icon {
+  position: absolute;
+  /* top: 50%; */
+  bottom: -1200px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100%;
+  text-align: center;
+} 
+
+.tombol {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  background: #f1f1f1;
+  margin: 10px;
+  border-radius: 20%;
+  box-sizing: 0 5px 15px -5px #010101;
+  box-shadow: 0 5px 15px -5px #010101;
+  overflow: hidden;
+  position: relative;
+  color: #2980b9;
+  z-index: 5;
+}
+
+.tombol i{
+  transition: 0.3s linear;
+  font-size: 26px;
+  line-height: 90px;
+}
+
+.tombol:hover i{
+  transform: scale(1.3);
+  color: #f1f1f1;
+}
+
+.tombol::before{
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  left: -110%;
+  top: 90%;
+  transform: rotate(45deg);
+  background: #3498db;
+}
+
+.tombol:hover::before{
+  left: -10%;
+  top: -10%;
+  animation: aaa 0.7s 1;
+}
+
+@keyframes aaa{
+  0% {
+  left: -110%;
+  top: 90%;
+  }
+  50% {
+  left: 10%;
+  top: -30%;
+  }
+  100% {
+  left: -10%;
+  top: -10%;
+  }
+}
+/* 
+ANIMASI H1 */
+h1 {
+  font-size: 36px;
+  text-align: center;
+  color: #b61616; /* Warna awal */
+  animation: bergerakWarna 3s infinite alternate; /* Nama animasi, durasi, jumlah pengulangan, dan arah perubahan */
+}
+
+@keyframes bergerakWarna {
+  0% {
+    color: #b61616; /* Warna awal */
+    transform: translateX(0); /* Tidak ada perubahan posisi */
+  }
+  50% {
+    color: #ce35a8; /* Warna pertengahan */
+    transform: translateX(20px); /* Perubahan posisi sepanjang sumbu X */
+  }
+  100% {
+    color: #b61616; /* Warna akhir, kembali ke warna awal */
+    transform: translateX(0); /* Kembali ke posisi awal */
+  }
+}
+
+
 /* Main */
 
 main {
@@ -137,17 +231,21 @@ main .gambar1 {
 
 .judul {
   font-family: 'Open Sans', 'sans-serif';
-  font-size: 500;
+  font-size: 600;
 }
 
 .warnateksputih {
   color: #e6c5c5;
 }
+
+
 /* Footer */
 
 footer {
   background-color: #000;
   padding: 20px 0;
+  position: relative;
+  z-index: 3;
 }
 
 footer .container {
