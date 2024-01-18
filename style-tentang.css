@@ -1,0 +1,154 @@
+* {
+    margin:0 ;
+    padding: 0;
+    text-decoration:none ;
+}
+
+body {
+    background-color:salmon ;
+    height: 1200px;
+}
+
+.tombol {
+    display: inline-block;
+    font-family: sans-serif;
+    padding: 10px 20px; /* Atur jarak antara teks dan tepi button */
+    background-color: #4CAF50; /* Warna hijau */
+    border: none; /* Hilangkan garis tepi */
+    border-radius: 7px; /* Buat sudut membulat */
+    color: rgb(236, 230, 230); /* Warna teks putih */
+    text-align: center; /* Teks di tengah */
+    /* justify-content: center; */
+    font-size: 16px; /* Ukuran teks */
+    z-index: 1;
+    margin-left: 45px;
+    margin-bottom: 10px;
+    cursor: pointer; /* Tampilan kursor saat hover */
+    transition: all 0.3s ease; /* Animasi transisi halus */
+  }
+
+  .tombol a:hover {
+    color: #0d0e0d; /* Ganti dengan warna yang Anda inginkan saat tautan dihover, misalnya #00ff00 untuk hijau */
+    transition: all 0.4s ease-in-out;
+  }
+
+  .tombol a {
+    color: #f7f1f8; /* Ganti dengan warna yang Anda inginkan, misalnya #ff0000 untuk merah */
+    text-decoration: none; /* Menghapus garis bawah default pada tautan */
+  }
+  
+  .tombol:hover {
+    background-color: #3e8e41; 
+    opacity: 0.8;
+  }
+
+.teks-bergerak {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) ;
+}
+
+marquee {
+    width: 90%;
+    height: 50px;
+    color: bisque;
+    border: 1px solid white;
+    font-size: 36px;
+    margin-bottom: 15px;
+    /* justify-content: center; */
+}
+
+.jam-digital {
+    font-family: 'Arial', sans-serif;
+    font-size: 50px;
+    color: #333;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    width: 200px;
+    margin-left: 45px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .hbt {
+    font-family: 'Arial', sans-serif;
+    font-size: 46px;
+    color: #333;
+    padding: 10px;
+    top: 90px;
+    margin-top: 20px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    width: 200px;
+    margin-left: 45px;
+  }
+
+  h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+
+  h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-left: 45px;
+    margin-bottom: 20px;
+  }
+
+  .text-ditengah {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  
+  
+
+  @media (max-width: 768px) {
+    .teks-bergerak {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%) ;
+        
+    }
+    
+    marquee {
+        width: 60%;
+        height: 50px;
+        color: bisque;
+        border: 1px solid white;
+        font-size: 38px;
+        margin-bottom: 15px;
+        float: right;
+    }
+    
+  }
+
+  @media (max-width: 480px) {
+    .teks-bergerak {
+        top: 50%;
+        margin-top: 600px;
+        margin-bottom: 50px;
+    }
+
+    marquee {
+        width: 100%; /* Menyesuaikan lebar */
+        height: 40px;
+        color: bisque;
+        border: 1px solid white;
+        font-size: 16px;
+        margin-bottom: 10px;
+        float: none; /* Menghapus properti float */
+        clear: both; /* Menambah properti clear */
+        margin-right: 0; /* Menghapus margin-right */
+    }
+    .hbt {
+        top: 20px; /* Sesuaikan nilai top untuk memberikan ruang pada elemen di atasnya */
+    }
+}
