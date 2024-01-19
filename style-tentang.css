@@ -106,6 +106,15 @@ marquee {
     margin-bottom: 20px;
   }
 
+  .text-ditengah-h3 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
   
   
 
@@ -151,4 +160,52 @@ marquee {
     .hbt {
         top: 20px; /* Sesuaikan nilai top untuk memberikan ruang pada elemen di atasnya */
     }
+}
+
+@media (max-width: 500px) {
+    .teks-bergerak {
+        top: 50%;
+        margin-top: 600px;
+        margin-bottom: 50px;
+    }
+
+    marquee {
+        width: 100%; /* Menyesuaikan lebar */
+        height: 40px;
+        color: bisque;
+        border: 1px solid white;
+        font-size: 16px;
+        margin-bottom: 10px;
+        float: none; /* Menghapus properti float */
+        clear: both; /* Menambah properti clear */
+        margin-right: 0; /* Menghapus margin-right */
+    }
+    .hbt {
+        top: 20px; /* Sesuaikan nilai top untuk memberikan ruang pada elemen di atasnya */
+    }
+}
+
+
+@media (max-width: 320px) {
+    .teks-bergerak {
+        top: 50%;
+        margin-top: 600px;
+        margin-bottom: 50px;
+    }
+
+    marquee {
+        width: 90%; /* Menyesuaikan lebar */
+        height: 35px;
+        color: bisque;
+        border: 1px solid white;
+        font-size: 13px;
+        margin-bottom: 10px;
+        float: none; /* Menghapus properti float */
+        clear: both; /* Menambah properti clear */
+        margin-right: 0; /* Menghapus margin-right */
+    }
+    .hbt {
+        top: 20px; /* Sesuaikan nilai top untuk memberikan ruang pada elemen di atasnya */
+    }
+
 }
