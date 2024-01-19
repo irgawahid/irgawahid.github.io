@@ -9,6 +9,6 @@ function getInfoWaktuSekarang() {
 }
 
 const waktuSekarang = getInfoWaktuSekarang();
-document.getElementById('hari').innerText = `Hari: ${waktuSekarang.hari}`;
+document.getElementById('hari').innerText = `Tanggal: ${waktuSekarang.hari}`;
 document.getElementById('bulan').innerText = `Bulan: ${waktuSekarang.bulan}`;
 document.getElementById('tahun').innerText = `Tahun: ${waktuSekarang.tahun}`;

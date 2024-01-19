@@ -54,7 +54,7 @@ header .nav a {
 }
 
 nav {
-  background-color: #000;
+  background-color: #d18e11;
   height: 80px;
   display: flex;
   align-items: center;
@@ -112,16 +112,17 @@ nav a:hover::before {
 
 .icon {
   position: absolute;
-  bottom: 80px;
+  top: 1260px;
+  bottom: 40px;
   right: 20px;
-  z-index: 1000;
+  z-index: 2;
 }
 
 .tombol {
   display: inline-block;
   width: 40px;
   height: 40px;
-  background: #333;
+  background: #977be2;
   margin: 10px;
   border-radius: 50%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -213,10 +214,10 @@ main .gambar1 {
 /* Footer */
 
 footer {
-  background-color: #000;
+  background-color: #1f1e1e;
   padding: 20px 0;
   position: relative;
-  z-index: 3;
+  z-index: 1;
 }
 
 footer .container {
@@ -330,7 +331,13 @@ footer .pesan {
   .tombol:hover {
     background: #555;
   }
-  
-  
 }
-
+@media (max-width: 500px){
+  .icon {
+    position: absolute;
+    top: 980px;
+    bottom: 40px;
+    right: 20px;
+    z-index: 2;
+  }
+}
