@@ -112,9 +112,10 @@ nav a:hover::before {
 
 .icon {
   position: absolute;
-  top: 1260px;
-  bottom: 40px;
-  right: 20px;
+  top: auto;
+  bottom: auto;
+  right: 15px;
+  margin-top: 12px;
   z-index: 2;
 }
 
@@ -210,6 +211,14 @@ main .gambar1 {
   color: #e6c5c5;
 }
 
+.tekskekiri {
+  text-align: left;
+  text-indent: 15px;
+  margin: 10px 90px 40px 30px;
+  padding-right: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 
 /* Footer */
 
@@ -217,6 +226,7 @@ footer {
   background-color: #1f1e1e;
   padding: 20px 0;
   position: relative;
+  height: 400px;
   z-index: 1;
 }
 
@@ -332,12 +342,26 @@ footer .pesan {
     background: #555;
   }
 }
+
+/* ICON SOSMED */
 @media (max-width: 500px){
   .icon {
     position: absolute;
-    top: 980px;
-    bottom: 40px;
-    right: 20px;
+    top: auto;
+    bottom: auto;
+    right: 15px;
+    margin-top: 200px;
+    size: 10px;
     z-index: 2;
+  }
+  .tombol {
+    background: #333;
+  }
+  
+  }
+  /* FOOTER */
+  footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }
