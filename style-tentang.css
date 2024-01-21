@@ -121,7 +121,7 @@ marquee {
     margin-top: 10px;
 }
   
-  
+  /* RESPONSIV DISPLAY */
 
   @media (max-width: 768px) {
     .teks-bergerak {
@@ -144,10 +144,47 @@ marquee {
     
   }
 
+  
+  @media (max-width: 720px) {
+    .teks-bergerak {
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%,-50%) ;
+        width: 300px;
+    }
+    
+    marquee {
+        width: 70%;
+        height: 60px;
+        color: bisque;
+        border: 1px solid white;
+        font-size: 38px;
+        margin-bottom: 15px;
+        float: right;
+    }
+    .text-ditengah-h3 {
+      margin-top: 40px;
+      margin-bottom: 90px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      text-align: center;
+      display: flex;
+      width:  auto;
+      left: 0;
+      text-align: center;
+      align-items: center;
+  }
+  .paragraf {
+    width: auto;
+  }
+  
+    
+  }
+
+
   @media (max-width: 480px) {
     .teks-bergerak {
         top: 50%;
-        margin-top: 600px;
+        margin-top: 650px;
         margin-bottom: 50px;
     }
 

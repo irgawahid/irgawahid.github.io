@@ -144,35 +144,6 @@ nav a:hover::before {
   background: #555;
 }
 
-/* 
-ANIMASI H1 */
-/* h1 {
-  padding: 0;
-  margin: 0;
-  left: 0;
-  right: 0;
-  font-size: 32px;
-  text-align: center;
-  color: #b61616; /* Warna awal */
-  animation: bergerakWarna 3s infinite alternate; /* Nama animasi, durasi, jumlah pengulangan, dan arah perubahan */
-}
-
-@keyframes bergerakWarna {
-  0% {
-    color: #b61616; /* Warna awal */
-    transform: translateX(0); /* Tidak ada perubahan posisi */
-  }
-  50% {
-    color: #ce35a8; /* Warna pertengahan */
-    transform: translateX(5px); /* Perubahan posisi sepanjang sumbu X */
-  }
-  100% {
-    color: #8be615; /* Warna akhir, kembali ke warna awal */
-    transform: translateX(0); /* Kembali ke posisi awal */
-  }
-} */
-
-
 /* Main */
 
 main {
@@ -227,6 +198,7 @@ footer {
   padding: 20px 0;
   position: relative;
   height: 400px;
+  margin-top: 100px;
   z-index: 1;
 }
 
@@ -257,21 +229,112 @@ footer .pesan {
 
 /* Hamburger menu */
 
-.hamburger-menu {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 40px;
-  height: 40px;
-  z-index: 9999;
+.icon {
+  position: absolute;
+  top: auto;
+  bottom: auto;
+  right: 15px;
+  margin-top: 5px;
+  z-index: 2;
 }
 
-.hamburger-menu span {
-  position: relative;
-  width: 10px;
-  height: 2px;
-  background-color: #
+.menu-icon {
+  cursor: pointer;
+  display: none;
 }
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.nav-menu {
+  display: none;
+}
+
+.nav-menu.show {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left: auto;
+  right: auto;
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+  background-color: #333;
+  z-index: 1;
+}
+
+.nav-menu ul {
+  list-style: none;
+  flex-direction: column;
+}
+
+.nav-menu ul li {
+  margin: 10px 0;
+}
+
+.nav-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.nav-menu a:hover {
+  color: #f00;
+}
+
+.nav-menu a::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #1e9400a9;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.nav-menu a:hover::before {
+  transform: scaleX(1);
+}
+
+@media (max-width: 480px) {
+  .icon {
+    position: fixed;
+    bottom: 60px;
+    z-index: 1000;
+  }
+
+  .tombol {
+    background: #333;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-menu.show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    padding-left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1;
+  }
+
+/* RESPONSIVE NAVBAR */
 
 @media (max-width: 768px) {
   .container {
@@ -295,6 +358,13 @@ footer .pesan {
 }
 
 @media (max-width: 920px) {
+  .container {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 720px) {
   .container {
     width: 100%;
     height: auto;
@@ -350,14 +420,18 @@ footer .pesan {
     top: auto;
     bottom: auto;
     right: 15px;
-    margin-top: 200px;
+    margin-top: 300px;
     size: 10px;
     z-index: 2;
   }
   .tombol {
     background: #333;
   }
-  
+
+  nav li {
+    margin-right: 10px;
+  }
+
   }
   /* FOOTER */
   footer .container {
