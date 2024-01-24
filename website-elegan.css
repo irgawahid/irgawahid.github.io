@@ -12,6 +12,12 @@ body {
   /* height: 1000vh; */
 }
 
+.logotitle {
+  font-size: 18px;
+  font-weight: bold;
+  color: #131212;
+  margin-left: 10px;
+}
 /* Header */
 
 header {
@@ -53,6 +59,7 @@ header .main-nav a {
   text-decoration: none;
 }
 
+
 /* NAVBAR */
 
 .main-nav {
@@ -70,6 +77,7 @@ header .main-nav a {
 }
 
 .main-nav ul {
+  color: #977be2;
   list-style: none;
   padding: 0;
   display: flex;
@@ -81,7 +89,7 @@ header .main-nav a {
 }
 
 .main-nav a {
-  color: #f6f5f8;
+  color: #eee4e4;
   text-decoration: none;
   font-family: sans-serif;
   font-size: 16px;
@@ -108,6 +116,8 @@ header .main-nav a {
 .main-nav a:hover::before {
   transform: scaleX(1);
 }
+
+
 
   /* SOSMED */
 
@@ -238,6 +248,7 @@ footer .pesan {
   margin-right: 20px;
   right: 0;
   z-index: 2;
+  cursor: pointer;
   transition: all 0.3s ease;
 }
 
@@ -271,7 +282,7 @@ footer .pesan {
   width: 100%;
   background-color: #333;
   z-index: 5;
-  height: 200px;
+  height: 230px;
   
 }
 

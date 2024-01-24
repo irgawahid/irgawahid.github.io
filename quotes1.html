@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 600px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #3498db;
+        }
+
+        .quote {
+            font-style: italic;
+            margin-top: 20px;
+        }
+
+        .author {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 10px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .back-button:hover {
+            background-color: #19608f;
+            transition: all 0.3s ease-out;
+        }
+
+        /* RESPONSIV */
+
+        @media only screen and (max-width: 500px) {
+            .container {
+                max-width: 50%;
+            }
+            .back-button {
+                right: 10px;
+                margin-right: auto;
+            }
+        }
+
+        @media only screen and (max-width: 720px) {
+            .container {
+                max-width: 80%;
+            }
+            h1 {
+                margin-top: 60px;
+            }
+            .back-button {
+                margin-right: 50px;
+            }
+        }
+
+        @media only screen and (max-width: 300px) {
+            .container {
+                max-width: 70%;
+            }
+            .back-button {
+                margin-right: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <button class="back-button" onclick="goBack()">Kembali ke halaman utama</button>
+
+        <h1>Kutipan inspiratif</h1>
+        <div class="quote">
+            <p>"Wajar kalau hatimu sakit, itu artinya cintamu tidak bercanda."</p>
+        </div>
+        <div class="author">
+            <p>- Unknown</p>
+        </div>
+
+        <div class="quote">
+            <p>"Aku gpp, semua bisa ku pendam sendiri."</p>
+        </div>
+        <div class="author">
+            <p>- Unknown</p>
+        </div>
+
+        <div class="quote">
+            <p>"Pengen punya satu orang yang selalu nanya gimana hari ini, capek ya, mau cerita apa, sederhana tapi kaya diperhatiin banget."</p>
+        </div>
+        <div class="author">
+            <p>- Unknown</p>
+        </div>
+
+        <div class="quote">
+            <p>"Sialnya, setiap kali aku tulus pada seseorang selalu di sia-siakan."</p>
+        </div>
+        <div class="author">
+            <p>- Unknown</p>
+        </div>
+
+        <div class="quote">
+            <p>"Bohong kalo gw orangnya bodoamatan, gw sangat perasa banget apalagi tentang sikap seseorang, perubahan sedikit pun dari orang-orang di sekitar gw pasti gw ngerasa , atau pun mungkin orang itu ga kenapa-kenapa, cuma lagi males aja gw pasti kepikiran sampe tanya ke diri sendiri berkali-kali orang itu kenapa?"</p>
+        </div>
+        <div class="author">
+            <p>- Unknown</p>
+        </div>
+
+        <div class="quote">
+            <p>"Sebenarnya seorang introvert itu peduli banget orangnya, namun ketika orang disekitarnya membuat ia marah, maka dia akan menarik diri dari lingkungan di sekitarnya."</p>
+        </div>
+        <div class="author">
+            <p>- Unknown</p>
+        </div>
+
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+
+</body>
+</html>
